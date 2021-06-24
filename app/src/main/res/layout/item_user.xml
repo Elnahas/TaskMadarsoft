@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userData"
+            type="task.com.data.models.UserModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`User Name :`+userData.userName}"
+            tools:text="User Name : Hazem Elnahas" />
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`Age :`+userData.age}"
+            tools:text="Age : 26" />
+
+        <TextView
+            android:id="@+id/txt_job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`Job title :`+userData.jobTitle}"
+            tools:text="Job title : Android Developer" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`Gender :` +userData.gender}"
+            tools:text="Gender : Male" />
+
+
+    </LinearLayout>
+</layout>
